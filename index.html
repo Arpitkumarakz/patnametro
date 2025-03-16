@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patna Metro Navigator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004AAD;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .menu-icon {
+            font-size: 24px;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .tile-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .tile {
+            background-color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tile img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.5rem;
+        }
+        .remove-ads { background-color: #FFEB3B; }
+        .fare { background-color: #FFC107; }
+        .map { background-color: #8BC34A; }
+        .stations { background-color: #03A9F4; }
+        .timings { background-color: #9C27B0; }
+        .contact { background-color: #FF5722; }
+        .rules { background-color: #4CAF50; }
+        .about { background-color: #00BCD4; }
+        .recharge { background-color: #FF9800; }
+        .feedback { background-color: #3F51B5; }
+        .parking { background-color: #607D8B; }
+        .route { background-color: #795548; }
+    </style>
+    <script>
+        function showMenu() {
+            alert("Menu clicked. Navigation options will be here.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="showMenu()">&#9776;</div>
+        <h1>Patna Metro Navigator</h1>
+    </header>
+
+    <div class="tile-container">
+        <div class="tile remove-ads">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Remove Ads">
+            <p>Remove Ads</p>
+        </div>
+        <div class="tile fare">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25669.png" alt="Fare">
+            <p>Fare</p>
+        </div>
+        <div class="tile map">
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Map">
+            <p>Map</p>
+        </div>
+        <div class="tile stations">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Stations">
+            <p>Stations</p>
+        </div>
+        <div class="tile timings">
+            <img src="https://cdn-icons-png.flaticon.com/512/3603/3603055.png" alt="Timings">
+            <p>Timings</p>
+        </div>
+        <div class="tile contact">
+            <img src="https://cdn-icons-png.flaticon.com/512/864/864806.png" alt="Upcoming Metro">
+            <p>Upcoming Metro</p>
+        </div>
+        <div class="tile rules">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Metro Rules">
+            <p>Metro Rules</p>
+        </div>
+        <div class="tile recharge">
+            <img src="https://cdn-icons-png.flaticon.com/512/4804/4804002.png" alt="Metro Card">
+            <p>Card Recharge</p>
+        </div>
+        <div class="tile parking">
+            <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Parking">
+            <p>Parking</p>
+        </div>
+        <div class="tile route">
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="Direction">
+            <p>Route</p>
+        </div>
+        <div class="tile feedback">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Feedback">
+            <p>Feedback</p>
+        </div>
+        <div class="tile about">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="About Us">
+            <p>About Us</p>
+        </div>
+    </div>
+</body>
+</html>
